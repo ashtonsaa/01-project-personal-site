@@ -1,1 +1,170 @@
-/* Add you CSS here */
+/* Style for the whole page: sets a clean background and font */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Easy-to-read font */
+  background-color: #f5f5f7; /* Light background for a modern look */
+  color: #222; /* Dark text for good contrast */
+  margin: 0; /* Removes default browser margin */
+  padding: 0;
+}
+
+/* Hero section styles: makes the top section stand out */
+.hero {
+  background-color: #222; /* Fallback color if image doesn't load */
+  color: #fff; /* White text for contrast */
+  text-align: center; /* Centers text */
+  min-height: 400px; /* Makes the hero section taller */
+  padding: 80px 20px; /* Adds more space above and below */
+  /* Add a background image to the hero section. Make sure the image is in the img folder! */
+  background-image:
+    linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6)), /* Semi-transparent overlay for opacity */
+    url('img/earth-at-night-view-from-space-4k-wallpaper-1980x1114.jpg');
+  background-size: cover; /* Makes the image cover the whole section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.hero h1 {
+  font-size: 3em; /* Large title */
+  margin-bottom: 10px; /* Adds a bit more space below the title */
+  margin-top: 40px; /* Lowers the text more */
+}
+
+.hero p {
+  font-size: 1.2em; /* Slightly larger text for tagline */
+  margin-top: 30px; /* Adds more space above the tagline */
+}
+
+/* Profile picture styles: makes the image round and centers it */
+.profile-pic {
+  display: block; /* Makes the image a block element */
+  margin: 0 auto 40px auto; /* Centers the image and adds more space below */
+  width: 200px; /* Makes the profile picture even larger */
+  height: 200px; /* Makes the profile picture even larger */
+  object-fit: cover; /* Ensures the image covers the area */
+  border-radius: 50%; /* Makes the image a circle */
+  border: none; /* Removes the visible border */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Adds a soft shadow */
+}
+
+/* Bio section styles: simple and clean */
+.bio {
+  max-width: 600px; /* Limits width for easy reading */
+  margin: 40px auto; /* Centers the section */
+  padding: 0 20px;
+}
+
+.bio h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.bio p {
+  font-size: 1em;
+  line-height: 1.6; /* Makes text easier to read */
+}
+
+/* Skills section styles: lists your skills clearly */
+.skills {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.skills h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes left padding */
+  text-align: center; /* Centers the list items */
+}
+
+.skills li {
+  display: inline-block; /* Makes each skill appear side by side */
+  font-size: 1em;
+  margin: 0 15px 6px 15px; /* Adds space between skills */
+  padding: 8px 16px; /* Adds padding for better appearance */
+  background: #eaeaea; /* Light background for each skill */
+  border-radius: 20px; /* Rounded edges for a modern look */
+}
+
+/* Header navigation styles: simple horizontal menu */
+.site-header {
+  background-color: #fff; /* White background for header */
+  border-bottom: 1px solid #ddd; /* Subtle border for separation */
+  padding: 10px 0;
+}
+
+.site-header nav ul {
+  list-style: none; /* Removes default bullets */
+  display: flex; /* Places items in a row */
+  justify-content: center; /* Centers the navigation */
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav ul li {
+  margin: 0 15px; /* Space between links */
+}
+
+.site-header nav ul li a {
+  text-decoration: none; /* Removes underline */
+  color: #222; /* Dark text for links */
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+.site-header nav ul li a:hover {
+  color: #0077ff; /* Blue color on hover */
+}
+
+/* Projects section styles: placeholder for future content */
+.projects {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.projects p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Contact section styles: simple and clear */
+.contact {
+  max-width: 600px;
+  margin: 40px auto 60px auto; /* Extra space at bottom */
+  padding: 0 20px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style-type: none; /* No bullets for contact list */
+  padding-left: 0;
+}
+
+.contact li {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.contact a {
+  color: #0077ff; /* Blue links for contact info */
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
