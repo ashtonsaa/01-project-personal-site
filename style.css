@@ -1,7 +1,8 @@
 /* Style for the whole page: sets a clean background and font */
 body {
   font-family: Arial, Helvetica, sans-serif; /* Easy-to-read font */
-  background-color: #f5f5f7; /* Light background for a modern look */
+  /* Make the background gradient lighter and more subtle */
+  background: linear-gradient(135deg, #e5e7eb 0%, #cfd8e3 50%, #b6c6e3 100%); /* Lighter greyscale to blue gradient */
   color: #222; /* Dark text for good contrast */
   margin: 0; /* Removes default browser margin */
   padding: 0;
@@ -34,6 +35,12 @@ body {
   margin-top: 30px; /* Adds more space above the tagline */
 }
 
+/* Use a modern, clean font for headings */
+h1, h2 {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; /* Modern font for headings */
+  letter-spacing: 1px; /* Slight spacing for a clean look */
+}
+
 /* Profile picture styles: makes the image round and centers it */
 .profile-pic {
   display: block; /* Makes the image a block element */
@@ -48,46 +55,68 @@ body {
 
 /* Bio section styles: simple and clean */
 .bio {
-  max-width: 600px; /* Limits width for easy reading */
-  margin: 40px auto; /* Centers the section */
+  width: 800px;
+  max-width: 100%;
+  margin: 30px auto;
   padding: 0 20px;
+  background: #f7f7fa; /* Light grey background for separation */
+  border-radius: 12px; /* Soft rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Subtle shadow for depth */
 }
 
 .bio h2 {
   font-size: 2em;
   margin-bottom: 10px;
+  color: #222; /* Dark heading for contrast */
 }
 
 .bio p {
+  font-family: 'Roboto', Arial, sans-serif; /* Clean font for body text */
   font-size: 1em;
-  line-height: 1.6; /* Makes text easier to read */
+  line-height: 1.6;
+  color: #444; /* Slightly lighter text for readability */
 }
 
 /* Skills section styles: lists your skills clearly */
 .skills {
-  max-width: 600px;
-  margin: 40px auto;
+  width: 800px;
+  max-width: 100%;
+  margin: 30px auto;
   padding: 0 20px;
+  background: #ededf0; /* Slightly darker grey for skills */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .skills h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  color: #222;
 }
 
 .skills ul {
-  list-style-type: none; /* Removes bullet points */
-  padding-left: 0; /* Removes left padding */
-  text-align: center; /* Centers the list items */
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .skills li {
-  display: inline-block; /* Makes each skill appear side by side */
+  display: inline-block;
   font-size: 1em;
-  margin: 0 15px 6px 15px; /* Adds space between skills */
-  padding: 8px 16px; /* Adds padding for better appearance */
-  background: #eaeaea; /* Light background for each skill */
-  border-radius: 20px; /* Rounded edges for a modern look */
+  margin: 0 10px 6px 10px;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  vertical-align: top;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif; /* Clean font for skill text */
+  color: #333; /* Medium grey for skill text */
+}
+
+.skills li i {
+  display: block;
+  font-size: 5em;
+  margin-bottom: 8px;
+  color: #4d4c4c;
 }
 
 /* Header navigation styles: simple horizontal menu */
@@ -123,46 +152,72 @@ body {
 
 /* Projects section styles: placeholder for future content */
 .projects {
-  max-width: 600px;
-  margin: 40px auto;
+  width: 800px;
+  max-width: 100%;
+  margin: 30px auto;
   padding: 0 20px;
+  background: #e6e6e9; /* Another shade of grey for projects */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .projects h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  color: #222;
 }
 
 .projects p {
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 1em;
-  color: #666;
+  color: #555; /* Slightly lighter grey for project text */
 }
 
 /* Contact section styles: simple and clear */
 .contact {
-  max-width: 600px;
-  margin: 40px auto 60px auto; /* Extra space at bottom */
+  width: 800px;
+  max-width: 100%;
+  margin: 30px auto 60px auto;
   padding: 0 20px;
+  background: #f3f3f6; /* Light grey for contact section */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .contact h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  color: #222;
 }
 
 .contact ul {
-  list-style-type: none; /* No bullets for contact list */
+  list-style-type: none;
   padding-left: 0;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .contact li {
+  display: inline-block;
   font-size: 1em;
-  margin-bottom: 8px;
+  margin: 0 10px 8px 10px;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  vertical-align: top;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif; /* Clean font for contact text */
+  color: #333;
+}
+
+.contact li i {
+  display: inline-block;
+  font-size: 1.4em; /* Smaller icon for better fit */
+  margin-right: 6px;
+  color: #111;
+  vertical-align: middle;
 }
 
 .contact a {
-  color: #0077ff; /* Blue links for contact info */
+  color: #0077ff;
   text-decoration: none;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 .contact a:hover {
